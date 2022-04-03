@@ -1,15 +1,16 @@
-package lesson5;
+package lesson5.HW;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.junit.jupiter.api.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.junit.jupiter.api.*;
 import java.time.Duration;
 
-public class ProfinstrumentTestHW5 {
+
+public class ProfinstrumentTest {
 
     WebDriver driver;
     WebDriverWait webDriverWait;
@@ -56,6 +57,4 @@ public class ProfinstrumentTestHW5 {
     void tearDown() {
         driver.quit();
     }
-
-
 }
