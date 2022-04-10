@@ -1,5 +1,6 @@
 package hw6;
 
+import io.qameta.allure.Step;
 import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -16,6 +17,7 @@ public class AddInstrumentForBasket extends BaseModel {
     @FindBy(id = "btn_basket_order")
     private WebElement createOrderButton;
 
+    @Step("Приступаем к оформлению заказа")
     public CreateOrder addOrder() {
         createOrderButton.click();
         return new CreateOrder(driver);

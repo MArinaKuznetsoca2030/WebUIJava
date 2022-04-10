@@ -1,5 +1,6 @@
 package hw6;
 
+import io.qameta.allure.Step;
 import lesson6.LoginPage;
 import lesson6.MyAccountPage;
 import org.openqa.selenium.By;
@@ -17,7 +18,7 @@ public class MainePageStart extends BaseModel {
     @FindBy(name = "submit")
     private WebElement findButton;
 
-
+    @Step("Ищем элемент в поле поиска")
     public SearchBlock findInstrument (String text){
         searchField.sendKeys(text);
         findButton.click();

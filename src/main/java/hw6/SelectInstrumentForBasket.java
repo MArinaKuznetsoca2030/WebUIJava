@@ -1,5 +1,6 @@
 package hw6;
 
+import io.qameta.allure.Step;
 import lesson6.WomenSuggestBlock;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,6 +14,7 @@ public class SelectInstrumentForBasket extends BaseModel {
     @FindBy(xpath = "//button[contains(@class, 'btn_buy popdef order')]")
     private WebElement addInstrumentBasket;
 
+    @Step("Добавляем инструмент в корзину")
     public AddInstrumentForBasket addInstrumentForBasket() {
         addInstrumentBasket.click();
         return new AddInstrumentForBasket(driver);
