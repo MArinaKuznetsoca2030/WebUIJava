@@ -45,7 +45,6 @@ public class AutomationBuyInstrumentProfinstrumentSite {
                 .addOrder()
                 .checkOrder();
     }
-
     @AfterEach
     void tearDown() {
 

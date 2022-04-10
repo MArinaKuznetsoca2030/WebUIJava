@@ -23,6 +23,4 @@ public class AddInstrumentForBasket extends BaseModel {
         return new CreateOrder(driver);
     }
 
-
-
 }

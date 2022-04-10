@@ -25,5 +25,4 @@ public class CreateOrder extends BaseModel {
         Assertions.assertTrue(driver.findElement(By.name("USER_LOGIN")).isDisplayed());
         Assertions.assertTrue(driver.findElement(By.name("USER_PASSWORD")).isDisplayed());
 }
-
 }

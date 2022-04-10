@@ -14,6 +14,7 @@ public class SelectInstrumentForBasket extends BaseModel {
     @FindBy(xpath = "//button[contains(@class, 'btn_buy popdef order')]")
     private WebElement addInstrumentBasket;
 
+
     @Step("Добавляем инструмент в корзину")
     public AddInstrumentForBasket addInstrumentForBasket() {
         addInstrumentBasket.click();
